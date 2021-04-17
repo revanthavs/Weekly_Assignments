@@ -1,0 +1,41 @@
+/*
+  Name: Atmakuri Venkata Sai Revanth
+  ID: 1684293
+  CMPUT 275, Winter 2021
+
+  Exercise 5: Dynamic Hashing
+*/
+
+
+INCLUDED FILES:-
+Makefile
+README
+exercise5.cpp
+hash_table.h
+linked_list.h
+dynarray.h
+
+
+MAKEFILE TARGETS:-
+1) make all
+2) exercise5: Builds the executable file
+3) exercise5.o: Compiles the exercise5.cpp and create the object file exercise5.o
+4) clean: Removes all object files and executables.
+
+
+RUNNING INSTRUCTIONS:-
+Once you are in the file directory just use the make command
+make
+Then the make will compile exercise5.cpp
+and creates the object files for exercise5.cpp files
+and then creates the excituable file by the object files
+and the name of excituable file name is exercise5
+After using it if you want to clean the object files run
+make clean
+
+
+NOTES AND ASSUMPTIONS:-
+1) Assuming that we can add private method to the hash_table class
+2) Considering we need to only resize when we have crossed
+the number of items > number of buckets
+3) Assuming that we should not give the user to specify the number of buckets
