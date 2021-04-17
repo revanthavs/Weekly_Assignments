@@ -1,0 +1,43 @@
+/*
+	Name: Atmakuri Venkata Sai Revanth
+	ID: 1684293
+	CMPUT 275, Winter 2021
+
+	Exercise 3: Garbage Collector Emulator
+*/
+
+INCLUDED FILES:-
+Makefile
+README
+ref_manager.cpp
+ref_manager.h
+we3_test.cpp
+
+MAKEFILE TARGETS:-
+1) make all
+2) we3_solution: Builds the executable file
+3) we3_test.o: Compiles the we3_test.cpp and create the object file we3_test.o
+4) ref_manager.o: Compiles the ref_managercpp and creates the object file ref_manager.o
+5) clean: Removes all object files and executables.
+
+RUNNING INSTRUCTIONS:-
+Once you are in the file directory just use the make command
+make
+Then the make first will compile ref_manager.cpp and we3_test.cpp
+and creates the object files for both .cpp files
+and then creates the excituable file by linking both the object files
+and the name of excituable file name is we3_solution
+After using it if you want to clean the object files run
+make clean
+
+NOTES AND ASSUMPTIONS:-
+1) I added a new attribute private garbage_i to keep track of the elements
+added to the garbage array.
+2) Considering the NULL to be the element not to keep track of in refCount.
+Since, it's not the memory to free
+3) Assuming in the destrutor method to ignore the element at that index if
+it's pointing to NULL
+4) Assuming in the garbagecollector method no element will be deleted if it's
+pointing to NULL
+5) I added #include <cassert> in ref_manager.cpp to avoid the error as one of the TA's mentioned in the
+Annoucments
