@@ -1,0 +1,39 @@
+/*
+	Name: Atmakuri Venkata Sai Revanth
+	ID: 1684293
+	CMPUT 275, Winter 2021
+
+	Exercise 4: Matrix Class
+*/
+
+INCLUDED FILES:-
+Makefile
+README
+matrix.cpp
+matrix.h
+
+MAKEFILE TARGETS:-
+1) make all
+2) matrix: Builds the executable file
+3) matrix.o: Compiles the matrix.cpp and create the object file matix.o
+4) clean: Removes all object files and executables.
+
+RUNNING INSTRUCTIONS:-
+Once you are in the file directory just use the make command
+make
+Then the make will compile matix.cpp
+and creates the object files for matix.cpp files
+and then creates the excituable file by the object files
+and the name of excituable file name is matrix
+After using it if you want to clean the object files run
+make clean
+
+NOTES AND ASSUMPTIONS:-
+1) Assuming that while the addition and subtraction operator overloading is called
+the matrixs have the same dimentions
+2) Considering that while the multiplication operator overloading is called the matrixs
+have the following dimention (m x n).(n x k) = (m x k)
+3) Assuming in the destrutor method to ignore the element at that index if
+it's pointing to NULL
+4) The bracket operator will returns the pointer of the row in the matrix
+5) Assuming we can add public attributes and private attribute to the class
